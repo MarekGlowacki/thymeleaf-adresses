@@ -8,3 +8,6 @@ class ThymeleafAdressesApplicationTests {
 
     @Test
     void contextLoads() {
+    }
+
+}

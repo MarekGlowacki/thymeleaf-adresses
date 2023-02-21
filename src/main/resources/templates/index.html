@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pl" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Galeria zdjęć</title>
+    <link rel="stylesheet" href="/styles/main.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>Galeria zdjęć</h1>
+    <img src="/images/java.jpg" alt="galeria sztuki" class="picture"/>
+    <p th:each="picture: ${pictures}">
+      <a th:href="|/picture?id=${picture.id}|" th:text="${picture.title}">Przykładowe zdjęcie</a>
+    </p>
+  </div>
+</body>
+</html>
